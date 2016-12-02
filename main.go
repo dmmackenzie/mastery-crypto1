@@ -33,13 +33,10 @@ func main() {
 
 	// Encrypt and decrypt in place
 	fmt.Printf("Plaintext: %s\n", buf)
-	fmt.Printf("      Raw: %v\n", buf)
+	fmt.Printf("      Raw: %v\n\n", buf)
 	cipher.Encrypt(buf, buf)
-	fmt.Printf("Encrypted: %s\n", buf)
-	fmt.Printf("      Raw: %v\n", buf)
+	fmt.Printf("Encrypted: %v\n\n", buf)
 	cipher.Decrypt(buf, buf)
 	fmt.Printf("Decrypted: %s\n", buf)
 	fmt.Printf("      Raw: %v\n", buf)
-
-	return
 }
